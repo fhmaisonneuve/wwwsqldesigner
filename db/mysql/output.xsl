@@ -32,6 +32,14 @@
 -- SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- SET FOREIGN_KEY_CHECKS=0;
 
+-- ---
+-- DATABASE
+-- ---
+-- DROP DATABASE IF EXISTS DatabaseName;
+-- CREATE DATABASE DatabaseName 
+-- USE DatabaseName;
+
+
 </xsl:text>
 
 <!-- tables -->
