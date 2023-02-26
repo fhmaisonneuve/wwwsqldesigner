@@ -126,7 +126,12 @@ SQL.Table.prototype.select = function () {
     this.selected = true;
     OZ.DOM.addClass(this.dom.container, "selected");
     OZ.DOM.addClass(this.dom.mini, "mini_selected");
+    
+    console.log('ssssss');
+    console.log(this.rows);
+    this.rows[0].redraw()
     this.redraw();
+    
 };
 
 SQL.Table.prototype.deselect = function () {
@@ -202,6 +207,12 @@ SQL.Table.prototype.redraw = function () {
     for (var i = 0; i < rs.length; i++) {
         rs[i].redraw();
     }
+
+    //var rows = this.rows;
+   // for (var i = 0; i < rows.length; i++) {
+    //    rows[i].redraw();
+   // }
+
 };
 
 SQL.Table.prototype.moveBy = function (dx, dy) {
