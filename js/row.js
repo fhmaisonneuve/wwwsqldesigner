@@ -268,10 +268,6 @@ SQL.Row.prototype.load = function () {
     /* put data to expanded form */
     this.dom.name.value = this.getTitle();
     var def = this.data.def;
-    if (def === null) {
-        def = "NULL";
-    }
-
     this.dom.def.value = def;
     this.dom.size.value = this.data.size;
     this.dom.nll.checked = this.data.nll;
