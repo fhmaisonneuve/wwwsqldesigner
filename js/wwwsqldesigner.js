@@ -228,9 +228,9 @@ SQL.Designer.prototype.getOption = function (name) {
         case "snap":
             return 0;
         case "showsize":
-            return 0;
+            return 1;
         case "showtype":
-            return 0;
+            return 1;
         case "pattern":
             return "%R_%T";
         case "hide":
